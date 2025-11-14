@@ -20,7 +20,7 @@ export default function Perfil() {
 
     useEffect(() => {
         if (!token) return;
-        fetch("http://localhost:3001/profile", {
+        fetch("https://alan-back-aa7lyo-1d86f0-72-60-121-26.traefik.me/profile", {
             headers: { Authorization: `Bearer ${token}` },
         })
             .then(res => res.json())
@@ -48,7 +48,7 @@ export default function Perfil() {
         e.preventDefault();
         setMensaje(""); setError("");
         try {
-            const res = await fetch("http://localhost:3001/usuario", {
+            const res = await fetch("https://alan-back-aa7lyo-1d86f0-72-60-121-26.traefik.me/usuario", {
                 method: "PUT",
                 headers: { "Content-Type": "application/json", Authorization: `Bearer ${token}` },
                 body: JSON.stringify(datos)
@@ -64,7 +64,7 @@ export default function Perfil() {
         e.preventDefault();
         setPassMensaje(""); setPassError("");
         try {
-            const res = await fetch("http://localhost:3001/usuario/password", {
+            const res = await fetch("https://alan-back-aa7lyo-1d86f0-72-60-121-26.traefik.me/usuario/password", {
                 method: "PUT",
                 headers: { "Content-Type": "application/json", Authorization: `Bearer ${token}` },
                 body: JSON.stringify(passwords)

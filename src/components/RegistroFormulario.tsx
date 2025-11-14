@@ -24,7 +24,7 @@ export default function FormRegistroCliente() {
         const data = { empresa, contacto, email, telefono, descripcion };
 
         try {
-            const res = await fetch("http://localhost:3001/registro", {
+            const res = await fetch("https://alan-back-aa7lyo-1d86f0-72-60-121-26.traefik.me/registro", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(data),

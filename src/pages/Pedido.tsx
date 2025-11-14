@@ -20,7 +20,7 @@ export default function CrearPedido() {
 
     // Traer servicios del backend
     useEffect(() => {
-        fetch("http://localhost:3001/servicios", {
+        fetch("https://alan-back-aa7lyo-1d86f0-72-60-121-26.traefik.me/servicios", {
             headers: { Authorization: `Bearer ${token}` }
         })
             .then(res => res.json())
@@ -41,7 +41,7 @@ export default function CrearPedido() {
         e.preventDefault();
         if (selectedServicio === null || cantidad <= 0) return;
 
-        const res = await fetch("http://localhost:3001/crear-pedido", {
+        const res = await fetch("https://alan-back-aa7lyo-1d86f0-72-60-121-26.traefik.me/crear-pedido", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

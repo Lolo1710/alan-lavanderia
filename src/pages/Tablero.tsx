@@ -23,7 +23,7 @@ export default function Dashboard() {
         }
 
         // Obtener datos del usuario desde el backend
-        fetch("http://localhost:3001/dashboard-data", {
+        fetch("https://alan-back-aa7lyo-1d86f0-72-60-121-26.traefik.me/dashboard-data", {
             headers: { Authorization: `Bearer ${token}` },
         })
             .then((res) => res.json())

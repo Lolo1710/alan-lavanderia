@@ -27,7 +27,7 @@ export default function Pedidos() {
         const token = localStorage.getItem("token");
         if (!token) return;
 
-        fetch("http://localhost:3001/pedidos", {
+        fetch("https://alan-back-aa7lyo-1d86f0-72-60-121-26.traefik.me/pedidos", {
             headers: { Authorization: `Bearer ${token}` },
         })
             .then((res) => res.json())
