@@ -6,6 +6,7 @@ import ProtectedRoute from "./components/ProtectedRoute";
 import Historial from "./pages/Historial"
 import Perfil from "./pages/Perfil";
 
+
 function App() {
   return (
     <Router>
