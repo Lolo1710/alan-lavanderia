@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import LandingLavanderia from "./pages/home";
-import Dashboard from "./pages/dashboard";
+import LandingLavanderia from "./pages/Home";
+import Dashboard from "./pages/Dashboard";
 import Pedidos from "./pages/Pedido";
 import ProtectedRoute from "./components/ProtectedRoute";
 import Historial from "./pages/Historial"
